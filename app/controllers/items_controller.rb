@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  resuce_from ActiveRecord::RecordNotFound, with: :render_not_found_response
+  rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
   def index
     if params[:user_id]
